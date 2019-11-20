@@ -79,7 +79,7 @@
   <div class="card-header">
     <ul class="nav nav-pills card-header-pills">
       <li class="nav-item">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="cordenação@gmail.com">Denunciar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@gmail">Denunciar</button>
       </li>
     </ul>
   </div>
@@ -122,7 +122,14 @@
     </div>
   </div>
 </div>
-     <script>
+     
+      <script src="jquery.min.js">
+      
+      </script>
+      <script src="bootstrap.bundle.js">
+      
+      </script>
+      <script>
        $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) 
   var recipient = button.data('whatever')
@@ -130,11 +137,6 @@
   modal.find('.modal-title').text('New message to ' + recipient)
   modal.find('.modal-body input').val(recipient)
 })
-      </script>
-      <script src="jquery.min.js">
-      
-      </script><script src="bootstrap.bundle.js">
-      
       </script>
       </body>
 <Style>
